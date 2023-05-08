@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2 class="titulo"> Lista de pessoas cadastrada</h2>
+    <div class="tudo">
+     <% pessoas.forEach((pessoa) => { %>
+     
+    <div class="pessoa">
+        <h2><%= pessoa.nome %> <%= pessoa.sobrenome%></h2>
+        <h4>Descrição:</h4>
+        <h4>Altura<%= pessoa.altura%></h4>
+        <h4>Idade:<%= pessoa.idade%></h4>
+    </div>  
+        <% }) %>
+    </div>
+</body>
+</html>
