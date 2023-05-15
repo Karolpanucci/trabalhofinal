@@ -13,10 +13,11 @@
      <% pessoas.forEach((pessoa) => { %>
      
     <div class="pessoa">
-        <h2><%= pessoa.nome %> <%= pessoa.sobrenome%></h2>
-        <h4>Descrição:</h4>
+        <h2><%= pessoa.nome %> 
+        <%= pessoa.sobrenome%></h2>
         <h4>Altura<%= pessoa.altura%></h4>
         <h4>Idade:<%= pessoa.idade%></h4>
+       <a href="/pessoas/delete" >Deletar</a>
     </div>  
         <% }) %>
     </div>
