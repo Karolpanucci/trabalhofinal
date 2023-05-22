@@ -31,7 +31,7 @@ app.post('/pessoas/criar', async function(req, res){
       res.status(500).json({ message: 'Ocorreu um erro ao criar o usuário.' });
   }
 })
-app.post('/pessoas/delete', async function(req, res){
+app.get('/pessoas/delete', async function(req, res){
 
   try {
       await pessoa.destroy({ where: { id: req.query.id } });
